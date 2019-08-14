@@ -2,18 +2,14 @@
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Post$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/vincentdu/Desktop/Development_Work/scala-coursera/Jobs API Analysis/target/scala-2.13/classes/Post$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	PostProtocol.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/vincentdu/Desktop/Development_Work/scala-coursera/Jobs API Analysis/target/scala-2.13/classes/PostProtocol.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	JobsAnalysis$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/vincentdu/Desktop/Development_Work/scala-coursera/Jobs API Analysis/target/scala-2.13/classes/JobsAnalysis$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	JobsAnalysis$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/vincentdu/Desktop/Development_Work/scala-coursera/Jobs API Analysis/target/scala-2.13/classes/JobsAnalysis$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	PostProtocol$PostJsonFormat$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/vincentdu/Desktop/Development_Work/scala-coursera/Jobs API Analysis/target/scala-2.13/classes/PostProtocol$PostJsonFormat$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	JobsAnalysis.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/vincentdu/Desktop/Development_Work/scala-coursera/Jobs API Analysis/target/scala-2.13/classes/JobsAnalysis.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Post.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/vincentdu/Desktop/Development_Work/scala-coursera/Jobs API Analysis/target/scala-2.13/classes/Post.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	PostProtocol$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/vincentdu/Desktop/Development_Work/scala-coursera/Jobs API Analysis/target/scala-2.13/classes/PostProtocol$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobsAnalysis$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/vincentdu/Desktop/Development_Work/scala-coursera/Jobs API Analysis/target/scala-2.13/classes/JobsAnalysis$$anon$1.class[0m
 [0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

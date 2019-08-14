@@ -4,7 +4,7 @@
 		module="jobs-api-analysis-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190806221045"
+		publication="20190813224223"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

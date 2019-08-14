@@ -6,7 +6,9 @@ import java.io.Reader
 import java.net.URL
 import java.util.Date
 
-import spray.json._
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.module.scala.DefaultScalaModule
+import com.fasterxml.jackson.module.scala.experimental.ScalaObjectMapper
 
 case class Post(id: String,
                 `type`: String,
@@ -19,23 +21,6 @@ case class Post(id: String,
                 description: String,
                 how_to_apply: String,
                 company_logo: String)
-
-object PostProtocol extends DefaultJsonProtocol {
-    implicit object PostJsonFormat extends RootJsonFormat[Post] {
-        def write(p: Post) =
-            JsArray(JsString(p.id), JsString(p.`type`), JsString(p.`url`), JsString(p.created_at), JsString(p.company),
-                JsString(p.company_url), JsString(p.location), JsString(p.title), JsString(p.description),
-                JsString(p.how_to_apply), JsString(p.company_logo))
-
-        def read(value: JsValue) = value match {
-            case JsArray(Vector(
-                JsString(id), JsString("type"), JsString("url"), JsString(created_at), JsString(company), JsString(company_url),
-                JsString(location), JsString(title), JsString(description), JsString(how_to_apply), JsString(company_logo)
-            )) => new Post(id, "type", "url", created_at, company, company_url, location, title, description,
-                how_to_apply, company_logo)
-        }
-    }
-}
 
 object JobsAnalysis extends App {
 
@@ -71,11 +56,9 @@ object JobsAnalysis extends App {
         content
     }
 
-    import PostProtocol._
     val response = getRequestContent(url)
-    println(response)
-    val convertedResponse = response.parseJson
-    val posts = convertedResponse.convertTo[List[Post]]
-
-    posts.foreach(e => println(e))
+    val objectMapper = new ObjectMapper() with ScalaObjectMapper
+    objectMapper.registerModule(DefaultScalaModule)
+    val convertedResponse = objectMapper.readValue[List[Post]](response)
+    convertedResponse.map(p => p.id).foreach(p => println(p))
 }
